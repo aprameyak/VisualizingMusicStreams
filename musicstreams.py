@@ -4,7 +4,7 @@ import scipy as sp
 import scipy.stats  as stats
 import matplotlib.pyplot as plt
 
-df = pd.read_csv(r'C:\Users\Aprameya Kannan\.vscode\.vscode\Stream\MostStreamed.csv')
+df = pd.read_csv(r'MostStreamed.csv')
 data = df[['Track Score','Apple Music Playlist Count', 'Amazon Playlist Count', 'Deezer Playlist Count']]
 df = pd.DataFrame(data, columns=['Track Score','Apple Music Playlist Count', 'Amazon Playlist Count', 'Deezer Playlist Count'])
 
