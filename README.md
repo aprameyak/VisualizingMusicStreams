@@ -1,44 +1,47 @@
-# 📊 Track Score vs Playlist Count Analysis
+# Visualizing Music Streams
 
-![Python](https://img.shields.io/badge/Language-Python-blue?logo=python)  
-![Pandas](https://img.shields.io/badge/Library-Pandas-green?logo=pandas)  
-![Scipy](https://img.shields.io/badge/Library-Scipy-lightgreen?logo=scipy)  
-![Matplotlib](https://img.shields.io/badge/Library-Matplotlib-red?logo=matplotlib)  
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge)
+![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white&style=for-the-badge)
+![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?logo=scipy&logoColor=white&style=for-the-badge)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?logo=matplotlib&logoColor=white&style=for-the-badge)
 
-## 📌 What it Does  
+## About
 
-The **Track Score vs Playlist Count Analysis** project explores the relationship between track scores and playlist counts on three major music streaming platforms: **Apple Music**, **Amazon Music**, and **Deezer**. By calculating Pearson’s correlation coefficient, it provides insights into how the track score is related to the number of playlists the track is featured in on each platform. The results are visualized with line graphs, showcasing the data and correlation values.
+**Visualizing Music Streams** explores the relationship between track scores and playlist counts on three major music streaming platforms: **Apple Music**, **Amazon Music**, and **Deezer**. By calculating **Pearson’s correlation coefficient**, the project provides insight into how track popularity correlates with playlist exposure.
 
-## 🚀 How We Built It  
+## Features
 
-### Technologies Used:  
-- **Python**: A powerful programming language used for data processing and analysis.  
-- **Pandas**: A Python library used for data manipulation and analysis.  
-- **Scipy**: A library used for scientific and statistical computations, including Pearson’s correlation.  
-- **Matplotlib**: A library for creating static, animated, and interactive visualizations in Python.  
+- **Data Preprocessing**: Handles missing values in playlist columns by filling with `0`  
+- **Correlation Analysis**: Calculates Pearson’s r to evaluate strength of linear relationships  
+- **Visual Insight**: Generates clear line plots showing the relationship per platform  
+- **Correlation Annotations**: Displays correlation values directly on the plot
 
-### Data Preprocessing:  
-- **CSV File (`MostStreamed.csv`)**: Contains data on track scores and playlist counts across the three platforms.  
-- **Handling Missing Data**: Missing values in playlist count columns were filled with `0` to maintain the integrity of the dataset.  
+### Platforms Analyzed:
+- Apple Music  
+- Amazon Music  
+- Deezer
 
-### Visualization:  
-- **Line Plot**: Created to display the relationship between track scores and playlist counts for each platform.  
-- **Correlation Values**: Pearson's correlation coefficients for each platform were calculated and displayed on the plot.
+## Technology Stack
 
-## 🚀 Features  
+- **Language**: Python  
+- **Libraries**:
+  - **Pandas** – for data loading, cleaning, and manipulation  
+  - **SciPy** – for Pearson correlation coefficient calculation  
+  - **Matplotlib** – for creating line plots and displaying results
 
-- **Data Processing**: Cleans and processes the dataset, filling missing playlist counts.  
-- **Correlation Analysis**: Calculates Pearson’s correlation coefficients to measure the strength of relationships between track scores and playlist counts.  
-- **Interactive Visualization**: Displays a line plot visualizing playlist count vs. track score for Apple Music, Amazon Music, and Deezer.  
-- **Correlation Annotations**: Displays the calculated correlation coefficients on the plot for each platform.  
+## Data
 
-### Interactive Features:
-- **Dynamic Plot**: Updates with track score and playlist count data from the CSV file.  
-- **Correlation Insights**: Shows real-time Pearson correlation values as part of the visual output.  
+- **Source**: `MostStreamed.csv`  
+- **Contents**:
+  - `track_score`  
+  - `apple_playlist_count`  
+  - `amazon_playlist_count`  
+  - `deezer_playlist_count`
 
-## 🔗 Integration  
+## Workflow
 
-- **Pandas**: Used for data handling and preprocessing.  
-- **Scipy**: Used to calculate Pearson's correlation coefficient between track scores and playlist counts.  
-- **Matplotlib**: Used for creating the line plot and rendering visual data.  
-
+1. Load and clean data with Pandas  
+2. Fill missing values in playlist columns with `0`  
+3. Calculate correlation between track score and playlist counts per platform  
+4. Visualize all three results using a single line plot  
+5. Annotate correlation values on the graph for clarity
